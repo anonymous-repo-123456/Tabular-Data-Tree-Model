@@ -1,6 +1,6 @@
 ### Convergence Proof and Complexity Analysis.
-[Proof](Tabular-Data-Tree-Model
-/Proof.pdf)
+[Proof](Tabular-Data-Tree-Model%20/Proof.pdf)
+
 
 
 ### Classification accuracies on small-sample datasets.
