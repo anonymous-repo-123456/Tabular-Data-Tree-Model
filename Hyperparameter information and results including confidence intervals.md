@@ -1,5 +1,5 @@
 ### Convergence Proof and Complexity Analysis.
-[Proof](Tabular-Data-Tree-Model%20/Proof.pdf)
+[Proof](Proof.pdf)
 
 
 
