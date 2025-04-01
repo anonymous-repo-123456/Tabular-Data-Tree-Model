@@ -1,3 +1,7 @@
+### [Convergence Proof and Complexity Analysis.](Tabular-Data-Tree-Model
+/Proof.pdf)
+
+
 ### Classification accuracies on small-sample datasets.
 
 | Data set    | $n$  | $m$  | Method    | Testing accuracy (%) $\uparrow$ | Training time (ms) $\downarrow$ | Testing time (ms) $\downarrow$ |
