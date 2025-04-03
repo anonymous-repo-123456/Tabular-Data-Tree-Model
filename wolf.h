@@ -493,14 +493,14 @@ void cLF_tree::createFeature(size_t SBid)
     //std::cout << "Size of m_SB[" << SBid << "].image_numbers: " << m_SB[SBid].image_numbers.size() << std::endl;
     //std::cout << "ans.v: " << ans.v << std::endl;
     //if (SBid<50|| ans.v < minSamples2Split || m_SB[SBid].image_numbers.size() - ans.v < minSamples2Split) { ans.c = 5; } // Case 5 splits the piece in two at a mid-point of all four threshold values
-    if ( ans.v < minSamples2Split || m_SB[SBid].image_numbers.size() - ans.v < minSamples2Split) { ans.c = 5; } // Case 5 splits the piece in two at a mid-point of all four threshold values
+    if ( ans.v < minSamples2Split) { ans.c = 5; } // Case 5 splits the piece in two at a mid-point of all four threshold values
     //if (SBid < 15 || ans.v < minSamples2Split) { ans.c = 5; } // Case 5 splits the piece in two at a mid-point of all four threshold values
     switch (ans.c)
     {
     case 1: m_SB[SBid].FTvalue = minNFS; break;
     case 2: m_SB[SBid].FTvalue = maxNFS+0.0001; break;
-    case 3: m_SB[SBid].FTvalue = minTFS-0.0001; break;
-    case 4: m_SB[SBid].FTvalue = maxTFS; break;
+    case 3: m_SB[SBid].FTvalue = minTFS; break;
+    case 4: m_SB[SBid].FTvalue = maxTFS+0.0001; break;
     case 5:/* featureSum = 0; // Another way of choosing FTvalue
             for (SF sf : m_SB[SBid].features)
             {
